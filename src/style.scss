@@ -1,0 +1,225 @@
+
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    padding-bottom: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+      height: 500px;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 100%;
+    
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    background-color: #5cb85c;
+    color: white;
+  }
+
+.map{
+    position: relative;
+    width: 65%;
+    float: left;
+}
+
+.modal-body{
+    display: flex;
+    background-color: white;
+    height: 100%;
+}
+
+  .shop-list{
+    height: 100%;
+    width: 35%;
+    float: left;
+    
+  }
+
+  .map-list{
+    height: 100%;
+    padding: 0 15px 0;
+  }
+  
+  .map-list ul {
+    height: 435px;
+    overflow: auto;
+    position: relative;
+}
+
+ul {
+    -moz-padding-start: 0;
+    -o-padding-start: 0;
+    -ms-padding-start: 0;
+    -webkit-padding-start: 0;
+    -moz-margin-before: 0;
+    -o-margin-before: 0;
+    -ms-margin-before: 0;
+    -webkit-margin-before: 0;
+    -moz-margin-after: 0;
+    -o-margin-after: 0;
+    -ms-margin-after: 0;
+    -webkit-margin-after: 0;
+    padding: 0;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.map-list li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ddd;
+}
+
+ul li {
+    list-style: none;
+}
+
+.map-list li a {
+    display: block;
+}
+
+a {
+    color: #000;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+.map-list li .map-el.active .map-num {
+    background-color: #222;
+}
+
+.shop-list h3{
+    font-family: UTMCafeta,Arial,sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #222;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.map-list .map-num {
+    background-color: #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.map-list li .map-el.active .map-num span {
+    color: #fff;
+}
+
+.map-list .map-num span {
+    color: #fff;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    font-style: italic;
+}
+
+.map-list .map-info {
+    display: inline-block;
+    width: 350px;
+    padding-left: 10px;
+}
+
+.map-list li .map-el .map-info span.map-address {
+    color: #666;
+}
+
+.map-list .map-info span.map-address {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
+
+.map-list .map-info span {
+    display: block;
+}
+
+.map-list li .map-el:hover {
+    color: #414141;
+    cursor: pointer;
+}
+
+.map-list li .map-el:hover .map-num {
+    background-color: #999;
+}
+
+.map-list li .map-el.active .map-num {
+    background-color: #222;
+}
+
+.map-list li .map-el:hover .map-info span.map-address, .map-list li .map-el:hover .map-info span.map-phone {
+    color: #222;
+}
+  
+ 
